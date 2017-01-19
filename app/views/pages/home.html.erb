@@ -1,40 +1,10 @@
-<h1>Hi, <%= current_user.first_name if current_user %></h1>
+<h1>Hi, <%= current_user.first_name %></h1>
 <p>Find me in app/views/pages/home.html.erb</p>
-
- <body>
-    <video id="https://youtu.be/rtUl0SXOqbM" autoplay loop poster="https://youtu.be/rtUl0SXOqbM">
-      <!-- Video is embedded in the WEBM format -->
-      <source src="video.webm" type="video/webm">
-    </video>
-
-  <style type=”text/css”>
-
-video#bgVideo {
-  position: absolute; // Play the video in full screen mode
-  top: 0px; 
-  left: 0px; 
-  min-width: 100%; 
-  min-height: 100%;
-  z-index: -1; // Put the video behind all other elements
-}
-
-@media only screen and (max-width: 768px) {
-  video {
-    display:none;
-  }
-  body{
-    background-image:url(“image.png”);
-  }
-}
-</style>
-
-  </body>
 
 
 <h1>Blog Posts</h1>
-
 <%= @posts.inspect %>
 
 <h1>Skills</h1>
-
 <%= @skills.inspect %>
+
