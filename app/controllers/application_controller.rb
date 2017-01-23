@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
+
+  before_action :set_copyright
+
+  def set_copyright
+    @copyright = BatchelorViewTool::Renderer.copyright 'Jamie Batchelor', 'All rights reserved'
+  end
 end
