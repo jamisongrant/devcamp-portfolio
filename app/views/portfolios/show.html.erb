@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container portfolio-container">
   <div class="row">
     <div class="col-md-7">
       <%= image_tag @portfolio_item.main_image %>
@@ -21,6 +21,11 @@
       <p><%= t.name %></p>
       <% end %>
 
+      <%= if logged_in?(:site_admin) %>
+        <div class="">
+          <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
