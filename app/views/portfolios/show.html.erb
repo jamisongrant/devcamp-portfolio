@@ -21,7 +21,7 @@
       <p><%= t.name %></p>
       <% end %>
 
-      <%= if logged_in?(:site_admin) %>
+      <% if logged_in?(:site_admin) %>
         <div class="">
           <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
         </div>
@@ -30,6 +30,3 @@
   </div>
 </div>
 
-<!-- <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %> -->
-
-<!-- <p><%= image_tag @portfolio_item.main_image unless @portfolio_item.thumb_image.nil? %></p> -->
