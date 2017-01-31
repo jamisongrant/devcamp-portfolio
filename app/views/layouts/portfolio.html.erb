@@ -11,14 +11,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <%= render "shared/portfolio_nav" %>
-  <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
+  <body>
+    <%= render "shared/portfolio_nav" %>
+    <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
 
-<%= yield %>
+    <%= yield %>
 
-  <%= render "shared/portfolio_footer" %>
+    <%= render "shared/portfolio_footer" %>
 
-<%= source_helper("application") %>
+    <%= alerts %>
 
+    <%= source_helper("application") %>
   </body>
 </html>
