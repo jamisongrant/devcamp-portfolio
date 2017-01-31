@@ -2,30 +2,23 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
-  # GET /blogs
-  # GET /blogs.json
+
   def index
     @blogs = Blog.page(params[:page]).per(5)
     @page_title = "My Portfolio Blog"
   end
 
-  # GET /blogs/1
-  # GET /blogs/1.json
   def show
     @page_title = @blog.title
   end
 
-  # GET /blogs/new
   def new
     @blog = Blog.new
   end
 
-  # GET /blogs/1/edit
   def edit
   end
 
-  # POST /blogs_url
-  # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
 
@@ -38,8 +31,6 @@ class BlogsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /blogs/1
-  # PATCH/PUT /blogs/1.json
   def update
     respond_to do |format|
       if @blog.update(blog_params)
@@ -50,8 +41,7 @@ class BlogsController < ApplicationController
     end
   end
 
-  # DELETE /blogs/1
-  # DELETE /blogs/1.json
+
   def destroy
     @blog.destroy
     respond_to do |format|
