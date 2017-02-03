@@ -22,4 +22,14 @@ module BlogsHelper
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
     markdown_to_html.render(text).html_safe
   end
+
+  def font_blog_awesome action
+    case action
+    when "delete" then fa_icon "trash"
+    when "edit" then fa_icon "pencil"
+    when "draft" then fa_icon "eye-slash"
+    when "published" then fa_icon "eye"
+    end
+  end
+
 end
