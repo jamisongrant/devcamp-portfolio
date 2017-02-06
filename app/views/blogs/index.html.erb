@@ -2,11 +2,7 @@
   
   <%= paginate @blogs %>
 
-    <% if logged_in?(:site_admin) %>
-      <%= render @blogs %>
-    <% else %>
-      <%= render @blogs.published %>
-    <% end %>
+  <%= render @blogs %>
 
   <%= paginate @blogs %>
 
