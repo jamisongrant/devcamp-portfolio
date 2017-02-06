@@ -26,7 +26,7 @@ module BlogsHelper
   def font_blog_awesome action
     case action
     when "delete" then fa_icon "trash"
-    when "edit" then fa_icon "pencil"
+    when "edit" then fa_icon "pencil-square-o"
     when "draft" then fa_icon "eye-slash"
     when "published" then fa_icon "eye"
     end
