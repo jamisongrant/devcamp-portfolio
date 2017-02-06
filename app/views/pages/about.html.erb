@@ -1,22 +1,13 @@
-<h1>About Me</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <h1>About Me</h1>
+        <p>I am 25 years old and have completed two years of college as well as a full-stack software development bootcamp at Bottega Tech. I am interested in the studies of Computer Science and am in pursuit of a BS in the field. I believe it is key to balance science with art and I express myself as lead singer & rhythm guitarist in the band <em>Widow Case</em>. </p>
 
-<hr>
-
-<div class="row">
-  <div class="col-md-2">
-
-  
-  </div>
-
-  <div class="col-md-8">
-    <p>I am 25 years old and have completed two years of college as well as a software development bootcamp. I am interested in the studies of Computer Science and am in pursuit of a BS in the field. I believe it is key to balance science with art and I express myself as lead singer & rhythm guitarist in the band <em>Widow Case</em>. </p>
-
-  | <% @skills.each do |skills| %>
-      <%= skills.title %> |
-    <% end %>
-
-  </div>
-</div>
-
-
-
+      | <% @skills.each do |skills| %>
+          <%= skills.title %> |
+        <% end %>
+      </div>
+    </div>
