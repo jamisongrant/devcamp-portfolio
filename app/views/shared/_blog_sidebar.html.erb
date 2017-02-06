@@ -4,6 +4,17 @@
     <p>This is a blog of my business adventures and other life interests. Such as <em>software development, music, and photography.</em></p>
   </div>
 
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+
+  </div>
+
+
+
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
@@ -11,7 +22,6 @@
       <li><a href="https://www.instagram.com/jamison_grant/"><%= fa_icon "instagram" %></a></li>
       <li><a href="https://www.facebook.com/jgbatchelor"><%= fa_icon "facebook" %></a></li>
       <li><a href="https://soundcloud.com/user-893864771"><%= fa_icon "soundcloud" %></a></li>
-
     </ol>
   </div>
 </div>
