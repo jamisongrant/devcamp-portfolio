@@ -2,6 +2,11 @@
   <div class="container">
     <h2 class="blog-title"><b>Jamison Grant</b></h1>
     <p class="lead blog-description">Read something interesting below.</p>
+    <span>
     <%= link_to 'Write a new post', new_blog_path if logged_in?(:site_admin) %>
+    </span>
+    <span>
+      <%= link_to "Topics", topics_path %>
+    </span>
   </div>
 </div>
