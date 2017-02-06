@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif|Francois+One|Neucha" rel="stylesheet"> 
     <meta charset="utf-8">
@@ -9,6 +10,8 @@
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon(2).ico' %>
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
