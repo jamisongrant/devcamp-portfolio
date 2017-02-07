@@ -4,7 +4,7 @@
     <p class="lead blog-description">Read something interesting below.</p>
     <span>
     <%= link_to 'Write a new post', new_blog_path if logged_in?(:site_admin) %>
-    </span>
+    </span>/
     <span>
       <%= link_to "Topics", topics_path if logged_in?(:site_admin) %>
     </span>

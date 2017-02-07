@@ -51,10 +51,6 @@ h6, .h6 {
   background-color: #50073B;
 }
 
-.navbar-brand a {
-  color: white;
-}
-
 /* Nav links */
 .nav-link {
   position: relative;
@@ -224,4 +220,21 @@ h6, .h6 {
 }
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #1BD4FDFF;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-light .navbar-brand {
+  color: #1BD4FDFF;
+  font-weight: bold;
+}
+
+a .navbar-link:hover {
+  color: #B5004DFF;
 }
