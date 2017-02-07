@@ -105,6 +105,9 @@ h6, .h6 {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+  background-color: #07070880;
+  border-radius: 10px;
+  padding: 0px 10px;
 }
 
 @media (min-width: 48em) {
@@ -249,6 +252,7 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 40px;
+  border-radius: 5%;
 }
 
 .profile-img {
@@ -268,3 +272,7 @@ h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.cover-heading {
+  color: white;
+}
+
