@@ -1,13 +1,56 @@
-    <hr>
-    <div class="row">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-8">
-        <h1>About Me</h1>
-        <p>I am 25 years old and have completed two years of college as well as a full-stack software development bootcamp at Bottega Tech. I am interested in the studies of Computer Science and am in pursuit of a BS in the field. I believe it is key to balance science with art and I express myself as lead singer & rhythm guitarist in the band <em>Widow Case</em>. </p>
+<hr>
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+    <h1>About Me</h1>
+    <p>I am 25 years old and have completed two years of college as well as a full-stack software development bootcamp at Bottega Tech. I am interested in the studies of Computer Science and am in pursuit of a BS in the field. I believe it is key to balance science with art and I express myself as lead singer & rhythm guitarist in the band <em>Widow Case</em>. </p>
 
-      | <% @skills.each do |skills| %>
-          <%= skills.title %> |
-        <% end %>
+  | <% @skills.each do |skills| %>
+      <%= skills.title %> |
+    <% end %>
+    <p>
+      <button
+      class="btn btn-primary"
+      type="button"
+      data-toggle="collapse"
+      data-target="#jobHistory"
+      aria-expanded="false"
+      aria-controls="jobHistory"
+
+      >
+        Job History
+      </button> 
+
+      <button
+      class="btn btn-primary"
+      type="button"
+      data-toggle="collapse"
+      data-target="#education"
+      aria-expanded="false"
+      aria-controls="education"
+
+      >
+        Education
+      </button>
+
+    </p>
+      <div class="collapse" id="jobHistory">
+        <div class="card card-block">
+          Job 1
+        </div>
+        <div class="card card-block">
+          Job 2
+        </div>        
+      </div>
+      <div class="collapse" id="education">
+        <div class="card card-block">
+          School 1
+        </div>
+        <div class="card card-block">
+          School 2
+        </div>
       </div>
     </div>
+  </div>
+</div>
