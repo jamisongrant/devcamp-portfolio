@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif|Francois+One|Neucha" rel="stylesheet"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,7 +10,7 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-
+    <%= favicon_link_tag 'favicons/thisone.ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -40,8 +41,6 @@
           <%= render "shared/application_footer" %>
 
           <%= alerts %>
-
-          <%= source_helper("application") %>
 
         </div>
       </div>

@@ -1,6 +1,6 @@
 module BlogsHelper
   def gravatar_helper user
-    image_tag "https://gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}", width: 40
+    image_tag "https://gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}?d=retro", width: 40
   end
 
   class CodeRayify < Redcarpet::Render::HTML
@@ -26,10 +26,13 @@ module BlogsHelper
   def font_blog_awesome action
     case action
     when "delete" then fa_icon "trash"
-    when "edit" then fa_icon "pencil"
+    when "edit" then fa_icon "pencil-square-o"
     when "draft" then fa_icon "eye-slash"
     when "published" then fa_icon "eye"
     end
   end
 
+  def blog_status_color blog
+    'color: red;' if blog.draft?
+  end
 end
