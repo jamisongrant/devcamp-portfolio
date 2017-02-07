@@ -2,6 +2,11 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Droid Sans Mono', monospace;
+  src:font-url('DroidSansMono.ttf')
+}
+
 body {
   font-family: 'Droid Sans Mono', monospace;
   min-height: 75rem; /* Can be removed; just added for demo purposes */
