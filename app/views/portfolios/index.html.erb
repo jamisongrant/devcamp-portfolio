@@ -3,6 +3,7 @@
     <%= source_helper("alert alert-warning") %>
     <div class="row <%=  "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+      <%= link_to "Add Item", new_portfolio_path, class: 'btn btn-primary' if logged_in?(:site_admin)  %>
     </div>
   </div>
 </div>
